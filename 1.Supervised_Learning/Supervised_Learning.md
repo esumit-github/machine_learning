@@ -10,18 +10,18 @@ Supervised Machine Learning is divided into two parts based upon their output:
 ```mermaid
   graph TD;
       Supervised_learning-->Regression;
-      Regression--> Linear_Regression
-      Regression--> Ridge_Regression
-      Regression--> LASSO_Regression
-      Regression--> Elastic_Regression
+      Regression--> Linear_Regression;
+      Regression--> Ridge_Regression;
+      Regression--> LASSO_Regression;
+      Regression--> Elastic_Regression;
       Supervised_learning-->Classification;
-      Classification--> Logistic_Regression
-      Classification--> Decision_Tree
-      Classification--> K-Neareast_Neighbors
-      Classification--> Support_Vector_Machine
-      Classification--> Ensemble_Techniques
-      Ensemble_Techniques --> Random_forest
-      Ensemble_Techniques --> Extreme_Gradient_Boost
+      Classification--> Logistic_Regression;
+      Classification--> Decision_Tree;
+      Classification--> K-Neareast_Neighbors;
+      Classification--> Support_Vector_Machine;
+      Classification--> Ensemble_Techniques;
+      Ensemble_Techniques --> Random_forest;
+      Ensemble_Techniques --> Extreme_Gradient_Boost;
 
 ```
 ## Supervised learning algorithms
