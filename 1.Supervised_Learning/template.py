@@ -6,7 +6,7 @@ import logging
 # instead of printing them the best practice is to log everything
 logging.basicConfig(level=logging.INFO, format='[%(asctime)s]: %(message)s:')
 
-project_name = '1.4_LinearRegression_MLflow'
+project_name = '1.1_LinearRegression'
 
 list_of_files = [
     #".github/workflows/.gitkeep",
@@ -23,7 +23,7 @@ list_of_files = [
     f"{project_name}/requirements.txt",
     f"{project_name}/commands.txt",
     f"{project_name}/research/trials.ipynb",
-    f"{project_name}/LinearRegression_MLflow.py"
+    f"{project_name}/LinearRegression_Adv_dataset.py"
 
 
 ]
