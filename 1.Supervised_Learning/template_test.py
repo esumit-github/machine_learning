@@ -8,12 +8,12 @@ from nbconvert.preprocessors import ExecutePreprocessor
 # instead of printing them the best practice is to log everything
 logging.basicConfig(level=logging.INFO, format='[%(asctime)s]: %(message)s:')
 
-project_name = '1.2_LinearRegression'
+project_name = '1.x_LinearRegression'
 
 list_of_files = [
     #".github/workflows/.gitkeep",
     #f"src/{project_name}/README.md",
-    f"{project_name}/datasets/data.csv",
+    #f"{project_name}/datasets/data.csv",
     #f"src/{project_name}/commands.txt",
     #f"src/{project_name}/config/configuration.py",
     #f"src/{project_name}/pipeline/__init__.py",
@@ -21,11 +21,11 @@ list_of_files = [
     #f"src/{project_name}/constants/__init__.py",
     #"config/config.yaml",
     #"dvc.yaml",
-    f"{project_name}/README.md",
-    f"{project_name}/requirements.txt",
-    f"{project_name}/commands.txt",
+    #f"{project_name}/README.md",
+    #f"{project_name}/requirements.txt",
+    #f"{project_name}/commands.txt",
     f"{project_name}/research/trials.ipynb",
-    f"{project_name}/LASSO_Ridge_ElstNet_Regression_admns_dataset.py"
+    #f"{project_name}/LASSO_Ridge_ElstNet_Regression_admns_dataset.py"
 ]
 
 
@@ -42,6 +42,8 @@ for filepath in list_of_files:
         with open(filepath, "w") as f:
             pass
             logging.info(f"Creating empty file: {filepath}")
+    if filename == "tials":
+        logging.info(f"This is the file path===>; {filepath}")
 
     else:
         logging.info(f"{filename} is already exists")
